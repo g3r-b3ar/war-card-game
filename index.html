@@ -1,0 +1,93 @@
+<!-- 
+WAR card game version 1.0
+Only works until the deck runs out
+Storage for player decks coming soon 
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="This is where your description goes" />
+		<meta name="keywords" content="one, two, three" />
+
+		<title>War Card Game</title>
+
+		<!-- external CSS link -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css?family=Roboto:400,300,100"
+			rel="stylesheet"
+			type="text/css"
+		/>
+		<link rel="stylesheet" href="css/normalize.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<h1>War Card Game!</h1>
+
+		<section class="table">
+
+			<section class="table-player">
+				<h2>Player 1</h2>
+				<img id="player1" src="" alt="Playing card" />
+			</section>
+
+			<section class="middle">
+				<button id="dealCards">Deal Two Cards!</button>
+				<h3>Score Board</h3>
+				<section class="score-board">
+					<section class="score-board-p1">
+						<h4>Player 1 Wins</p>
+						<p id="player1ScoreBoard">0</p>
+					</section>
+					<section class="score-board-cr">
+						<h4>Cards Remaining</p>
+						<p id="cardsRemainingDeck">52</p>
+					</section>
+					<section class="score-board-p2">
+						<h4>Player 2 Wins</p>
+						<p id="player2ScoreBoard">0</p>
+					</section>
+				</section>
+				<button id="war-button" class="hidden">DEAL FOR WAR!</button>
+			</section>
+
+			<section class="table-player">
+				<h2>Player 2</h2>
+				<img id="player2" src="" alt="Playing card" />
+			</section>
+		</section>
+		<section class="war hidden">
+			<section class="war-header">
+				<section class="player1WarHead">
+					<h4 class="warHeadDiscardP1">Player 1 Discard</h4>
+					<h4>Player 1 - War Card!</h4>
+				</section>
+				<section class="player2WarHead">
+					<h4 class="warHeadDiscardP2">Player 2 Discard</h4>
+					<h4>Player 2 - War Card!</h4>
+				</section>
+			</section>
+			<section class="war-player-container">
+				<section class="war-player1">
+					<img src="" alt="p1 discard 01" id="war-p1-discard01">
+					<img src="" alt="p1 discard 02" id="war-p1-discard02">
+					<img src="" alt="p1 discard 03" id="war-p1-discard03">
+					<img src="" alt="p1 war card" id="war-p1-warcard">
+				</section>
+				<section class="war-player2">
+					<img src="" alt="p2 discard 01" id="war-p2-discard01">
+					<img src="" alt="p2 discard 02" id="war-p2-discard02">
+					<img src="" alt="p2 discard 03" id="war-p2-discard03">
+					<img src="" alt="p2 war card" id="war-p2-warcard">
+				</section>
+			</section>
+		</section>
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

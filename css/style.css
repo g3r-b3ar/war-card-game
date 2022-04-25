@@ -1,0 +1,144 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+	box-sizing: border-box;
+	font-family: "Roboto";
+	font-weight: 100;
+}
+
+body {
+	background: #308834;
+	color: white;
+}
+
+h1 {
+	font-size: 64px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 24px;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+h1,
+h3,
+.score-board {
+	text-align: center;
+}
+.table-player h2 {
+	margin-bottom: 10px;
+}
+img {
+	display: block;
+	margin: 0 auto;
+	height: 30vh;
+}
+.table,
+.score-board {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+.middle {
+	flex-grow: 2;
+	margin: 20px 20px 0 20px;
+	max-width: 40vw;
+}
+/* .score-board {
+	border: 2px solid white;
+  border-radius: 5px;
+} */
+.table-player {
+	height: auto;
+	padding: 5px;
+	border: 2px solid black;
+	border-radius: 10px;
+	text-align: center;
+}
+
+/******************************************
+/* WAR STYLES
+/*******************************************/
+.war {
+	margin: 10px;
+	height: auto;
+	border: 2px solid black;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+.war-player1,
+.war-player2 {
+	display: flex;
+	flex-direction: row;
+	/* align-items: flex-start; */
+	/* justify-content: flex-start; */
+	/* outline: 2px solid purple; */
+	width: 50%;
+}
+#war-button {
+	margin: 20px auto;
+	width: 80%;
+	height: 70px;
+}
+#war-p1-discard01,
+#war-p1-discard02,
+#war-p1-discard03,
+#war-p2-discard01,
+#war-p2-discard02,
+#war-p2-discard03 {
+	/* outline: 2px solid orange; */
+	height: 60%;
+	width: auto;
+}
+.war-header {
+	display: flex;
+	flex-direction: row;
+}
+.player1WarHead,
+.player2WarHead {
+	display: flex;
+	/* outline: 2px solid orange; */
+	width: 50%;
+}
+.war-player-container {
+	display: flex;
+}
+/* #war-p1-warcard,
+#war-p2-warcard {
+	outline: 2px solid red;
+} */
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+button {
+	height: 50px;
+	width: 135px;
+	font-weight: 500;
+	margin: 0 auto;
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+section.war-header h4 {
+	text-align: center;
+	padding-right: 2%;
+}
+
+.warHeadDiscardP1,
+.warHeadDiscardP2 {
+	flex-grow: 3;
+}
